@@ -1,0 +1,20 @@
+# XM Cloud AI troubleshoot
+
+##Preferred (load env at app entry)
+Install dotenv:
+pnpm add -D dotenv -w
+## Setup
+pnpm install
+
+## Run
+pnpm dev
+
+## API
+POST /api/diagnose
+
+## Example
+{
+  "prompt": "Page not loading",
+  "query": "{ item { title } }",
+  "logs": ["Cannot query field 'title'"]
+}
